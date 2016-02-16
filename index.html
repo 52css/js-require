@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="js/getLoadGroup.js"></script>
+<script src="js/defineUse.js"></script>
+<script src="js/require.js"></script>
+<script>
+  require(['js/a.js'], function() {
+    console.log('done1');
+  });
+  require(['js/b.js'], function() {
+    console.log('done2');
+  });
+  require(['js/c.js'], function() {
+    console.log('done3');
+  });
+  require(['js/a.js', 'js/b.js', 'js/c.js'], function() {
+    console.log('done4');
+  });
+  require(['js/d.js'], function() {
+    console.log('done5');
+  });
+  require(['js/e.js'], function() {
+    console.log('done6');
+  });
+</script>
+</body>
+</html>
